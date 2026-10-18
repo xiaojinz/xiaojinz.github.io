@@ -1,0 +1,51 @@
+# Academic Pages theme, with group content maintained in _pages/
+remote_theme: academicpages/academicpages.github.io@master
+locale: "en-US"
+site_theme: "default"
+title: "EMERGE"
+title_separator: "-"
+name: "Xiaojin Zheng"
+description: "Environmental and Energy Geotechnics (EMERGE) Group at NTU"
+url: "https://xiaojinz.github.io"
+baseurl: ""
+repository: "xiaojinz/xiaojinz.github.io"
+author:
+  avatar: "https://lh3.googleusercontent.com/sitesv/AG8ngQWOWAFwAZZuiPNE0HYjkiHO6U2fR1evOKK_LMlvcDDeF4dDdeCjsbdzq15zDhEvlRwVIy65p_sVTxIEfW3HINBtWEFkRVAwj0Yp42TQaNJ4liILz_Oip8wrHEe2SU54hVpCJJQDQhyB1-3fSpqha_ZAOZ-vsz3CUs6DLtScgI9PL2ntz2A4iMBRRPJDGT5CRpc_3tFqmPs7Z1ik-RqtA0vZuQjRz_hO7IZB7lLFM2U=w400"
+  name: "Xiaojin Zheng"
+  bio: "Assistant Professor, Environmental and Energy Geotechnics (EMERGE)"
+  location: "Singapore"
+  employer: "Nanyang Technological University"
+  email: "xiaojin.zheng@ntu.edu.sg"
+  github: "xiaojinz"
+breadcrumbs: false
+future: false
+comments:
+  provider: false
+analytics:
+  provider: "false"
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+sass:
+  sass_dir: _sass
+  style: compressed
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      share: false
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
